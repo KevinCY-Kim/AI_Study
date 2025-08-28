@@ -40,4 +40,5 @@ S3 스토리지 캡쳐
 ## 7. 결과
 Epoch별 Accuracy 그래프
 ![Accuracy per Epoch](https://github.com/KevinCY-Kim/Deeplearning/blob/main/이미지분류/accuracy_per_epoch.png?raw=true)
+
 모델 학습 후 .pth 파일 저장
