@@ -18,11 +18,11 @@
 학습용 ImageFolder 형태에 바로 사용 가능
 
 ## 4. 기술 스택
-**모델**: PyTorch 기반 ResNeXt
-**데이터 처리**: torchvision.transforms, ImageFolder
-**학습 관리**: DataLoader, Adam 옵티마이저, CrossEntropyLoss
-**시각화**: matplotlib → epoch별 accuracy 그래프 저장
-**클라우드 저장**: AWS S3 (boto3)
+- **모델**: PyTorch 기반 ResNeXt
+- **데이터 처리**: torchvision.transforms, ImageFolder
+- **학습 관리**: DataLoader, Adam 옵티마이저, CrossEntropyLoss
+- **시각화**: matplotlib → epoch별 accuracy 그래프 저장
+- **클라우드 저장**: AWS S3 (boto3)
 
 ## 5. 학습/검증 과정
 
