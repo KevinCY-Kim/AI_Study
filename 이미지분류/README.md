@@ -34,8 +34,10 @@ validation accuracy도 epoch마다 계산
 loss, train/valid accuracy 출력
 
 ## 6. S3 업로드
+S3 스토리지 캡쳐
+![S3 Storage Capture](https://github.com/KevinCY-Kim/Deeplearning/blob/main/이미지분류/img.png?raw=true)
 
 ## 7. 결과
-Epoch별 학습/검증 정확도를 그래프로 확인 가능
+Epoch별 Accuracy 그래프
+![Accuracy per Epoch](https://github.com/KevinCY-Kim/Deeplearning/blob/main/이미지분류/accuracy_per_epoch.png?raw=true)
 모델 학습 후 .pth 파일 저장
-Accuracy 그래프는 S3에 업로드되어 원격에서 확인 가능
