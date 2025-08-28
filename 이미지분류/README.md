@@ -13,9 +13,9 @@
 ```
 
 ## 3. 데이터 전처리
-각 클래스별 폴더에서 8:2 비율로 train/valid 폴더로 재분류
-클래스별 폴더 구조 유지
-학습용 ImageFolder 형태에 바로 사용 가능
+- 각 클래스별 폴더에서 8:2 비율로 train/valid 폴더로 재분류
+- 클래스별 폴더 구조 유지
+- 학습용 ImageFolder 형태에 바로 사용 가능
 
 ## 4. 기술 스택
 - **모델**: PyTorch 기반 ResNeXt
@@ -25,11 +25,10 @@
 - **클라우드 저장**: AWS S3 (boto3)
 
 ## 5. 학습/검증 과정
-
-학습 루프
-각 epoch마다 train accuracy 계산 후 리스트에 저장
-validation accuracy도 epoch마다 계산
-loss, train/valid accuracy 출력
+- 학습 루프
+- 각 epoch마다 train accuracy 계산 후 리스트에 저장
+- validation accuracy도 epoch마다 계산
+- loss, train/valid accuracy 출력
 
 ## 6. S3 업로드
 *S3 스토리지 캡쳐*
