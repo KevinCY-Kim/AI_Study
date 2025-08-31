@@ -88,13 +88,11 @@ Random Forest (Optuna 최적화)	82.1%
 XGBoost (Optuna 최적화)	83.4%
 XGBoost + StratifiedKFold + 튜닝 85% 이상
 
-* ✨ 배운 점
+* ✨ 배운 점과 향후 방향
 
 Optuna는 직관적이며, 다양한 모델의 하이퍼파라미터 탐색에 유용하다.
-
 기본 모델 대비 성능 향상을 쉽게 확인할 수 있었다.
-
-AutoML 라이브러리(PyCaret, AutoGluon 등)와의 비교 실험 가능성도 있다.
+향후 AutoML 라이브러리(PyCaret, AutoGluon 등)와의 비교 실험에 유용 할 것으로 판단된다.
 
 
 
