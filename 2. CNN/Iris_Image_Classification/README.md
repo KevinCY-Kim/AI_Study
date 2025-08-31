@@ -32,10 +32,10 @@
 
 ## 6. S3 업로드
 *S3 스토리지 캡쳐*
-![S3 Storage Capture](https://github.com/KevinCY-Kim/Deeplearning/blob/main/이미지분류/img.png?raw=true)
+![S3 Storage Capture](img.png)
 
 ## 7. 결과
 *Epoch별 Accuracy 그래프*
-![Accuracy per Epoch](https://github.com/KevinCY-Kim/Deeplearning/blob/main/이미지분류/accuracy_per_epoch.png?raw=true)
+![Accuracy per Epoch](accuracy_per_epoch.png)
 
 - 모델 학습 후 pth 파일 저장
