@@ -1,0 +1,6 @@
+{"time":"2025-09-05T05:20:46.89016017Z","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp3eh1pln5/port-274.txt","pid":274,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-09-05T05:20:46.89113183Z","level":"INFO","msg":"server: will exit if parent process dies","ppid":274}
+{"time":"2025-09-05T05:20:46.891219743Z","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-274-1825-735013777/socket","Net":"unix"}}
+{"time":"2025-09-05T05:20:47.000224501Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2025-09-05T05:20:47.016617357Z","level":"INFO","msg":"handleInformInit: received","streamId":"k4k0qlif","id":"1(@)"}
+{"time":"2025-09-05T05:20:47.231039048Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"k4k0qlif","id":"1(@)"}

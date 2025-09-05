@@ -1,0 +1,64 @@
+==((====))==  Unsloth 2025.9.1: Fast Llama patching. Transformers: 4.56.0.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.741 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.8.0+cu126. CUDA: 7.5. CUDA Toolkit: 12.6. Triton: 3.4.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.32.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+<|begin_of_text|>Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+사내 법규는 어디에 있어.
+
+### Response:
+사내 법규는 회사 홈페이지에 게재되어 있습니다.<|end_of_text|>
+
+zip error: Nothing to do! (/content/well.zip)
+	zip warning: name not matched: /content/well
+
+zip error: Nothing to do! (try: zip -r /content/well.zip . -i /content/well)
+	zip warning: name not matched: /content/well
+
+zip error: Nothing to do! (try: zip -r /content/well.zip . -i /content/well)
+  adding: content/ (stored 0%)
+  adding: content/.config/ (stored 0%)
+  adding: content/.config/.last_update_check.json (deflated 23%)
+  adding: content/.config/hidden_gcloud_config_universe_descriptor_data_cache_configs.db (deflated 97%)
+  adding: content/.config/default_configs.db (deflated 98%)
+  adding: content/.config/active_config (stored 0%)
+  adding: content/.config/config_sentinel (stored 0%)
+  adding: content/.config/gce (stored 0%)
+  adding: content/.config/logs/ (stored 0%)
+  adding: content/.config/logs/2025.09.03/ (stored 0%)
+  adding: content/.config/logs/2025.09.03/13.35.50.564372.log (deflated 58%)
+  adding: content/.config/logs/2025.09.03/13.35.51.306217.log (deflated 56%)
+  adding: content/.config/logs/2025.09.03/13.35.39.928561.log (deflated 86%)
+  adding: content/.config/logs/2025.09.03/13.35.10.219821.log (deflated 93%)
+  adding: content/.config/logs/2025.09.03/13.35.31.467623.log (deflated 58%)
+  adding: content/.config/logs/2025.09.03/13.35.41.650830.log (deflated 58%)
+  adding: content/.config/.last_survey_prompt.yaml (stored 0%)
+  adding: content/.config/.last_opt_in_prompt.yaml (stored 0%)
+  adding: content/.config/configurations/ (stored 0%)
+  adding: content/.config/configurations/config_default (deflated 15%)
+  adding: content/웰니스1/ (stored 0%)
+  adding: content/웰니스1/tokenizer.json (deflated 85%)
+  adding: content/웰니스1/adapter_config.json (deflated 57%)
+  adding: content/웰니스1/README.md (deflated 65%)
+  adding: content/웰니스1/special_tokens_map.json (deflated 71%)
+  adding: content/웰니스1/tokenizer_config.json (deflated 96%)
+  adding: content/웰니스1/adapter_model.safetensors (deflated 8%)
+  adding: content/huggingface_tokenizers_cache/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/refs/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/refs/main (deflated 5%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/blobs/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/blobs/68b10c7f0a479eae0c358eac6a14959b3f9acdf1 (deflated 71%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/blobs/8a071772876bc826e78c6649464bf838205fe5d1 (deflated 96%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/blobs/6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b (deflated 85%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/.no_exist/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/.no_exist/c19aba40b57098abca2320dbbb84026dcc24cae4/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/.no_exist/c19aba40b57098abca2320dbbb84026dcc24cae4/chat_template.jinja (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/.no_exist/c19aba40b57098abca2320dbbb84026dcc24cae4/added_tokens.json (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/.no_exist/c19aba40b57098abca2320dbbb84026dcc24cae4/tokenizer.model (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/snapshots/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/snapshots/c19aba40b57098abca2320dbbb84026dcc24cae4/ (stored 0%)
+  adding: content/huggingface_tokenizers_cache/models--unsloth--llama-3.2-1b-bnb-4bit/snapshots/c19aba40b57098abca2320dbbb84026dcc24cae4/tokenizer.json
