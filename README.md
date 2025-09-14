@@ -11,48 +11,31 @@
 ---
 
 ## 1. ML (머신러닝)
-- **ML_타이타닉_Optuna**
-  - 타이타닉 생존자 예측 (Optuna 하이퍼파라미터 튜닝)
-  - 데이터: titanic.csv
-  - 주요 모델: Logistic Regression, RandomForest, XGBoost + Optuna
-  - 주요 기능: 데이터 전처리, 특성 선택, 하이퍼파라미터 자동 탐색, 성능 비교
-  - [상세 README](./1.%20ML/ML_타이타닉_Optuna/README.md)
-- **ML_wine**
-  - 와인 분류 (MLP)
-  - 데이터: wine.csv
-  - 주요 기능: MLP 기반 분류, 성능 평가
-- **ML_타이타닉_RDSML**
-  - 타이타닉 생존자 예측 (RDSML 실습)
-  - 데이터: titanic.csv
-  - 주요 기능: 다양한 ML 실험
+- **ML_타이타닉_Optuna**: [README](./1.%20ML/ML_타이타닉_Optuna/README.md)
+- **ML_wine**: [README](./1.%20ML/ML_wine/README.md)
+- **ML_타이타닉_RDSML**: [README](./1.%20ML/ML_타이타닉_RDSML/README.md)
 
 ## 2. CNN (합성곱 신경망)
-- **Iris_Image_Classification**
-  - 아이리스 꽃 이미지 분류 (ResNeXt)
-  - 데이터: iris-setosa, iris-virginica 이미지
-  - 주요 기능: 이미지 분류, S3 업로드, epoch별 accuracy 시각화
-  - [상세 README](./2.%20CNN/Iris_Image_Classification/README.md)
-- **객체인식**
-  - 실시간 객체 인식 (YOLOv8, FastAPI 웹서버)
-  - 주요 기능: 웹캠/이미지 객체 탐지, YOLO 실험, 웹서버 구현
+- **Iris_Image_Classification**: [README](./2.%20CNN/Iris_Image_Classification/README.md)
+- **객체인식**: [README](./2.%20CNN/객체인식/README.md)
 
 ## 3. NLP (자연어처리)
-- **llama파인튜닝과퓨샷프롬프트**
-  - Llama LLM 파인튜닝, RAG 실험
-  - 주요 기능: LLM 파인튜닝, RAG, 웰니스 데이터셋 활용
-- **mychat_사내정책**
-  - 사내 정책 챗봇, 웰니스 챗봇, 다양한 데이터셋/모델 실험
-- **web_chatbot**
-  - 간단한 웹 챗봇 구현
-- **web_time**
-  - LSTM 기반 시계열 예측, 웹서비스
-- **사내규정챗봇**
-  - 웰니스/사내규정 데이터 기반 챗봇, 파인튜닝 실습
+- **mychat_사내정책**: [README](./3.%20NLP/mychat_사내정책/README.md)
+  - 웰니스 챗봇, outputs(파인튜닝 결과), 샘플 데이터, unsloth 기반 파인튜닝, wandb 실험 관리 등
+  - 주요 하위 폴더/파일:
+    - [웰니스1/README.md](./3.%20NLP/mychat_사내정책/웰니스1/README.md)
+    - [outputs/README.md](./3.%20NLP/mychat_사내정책/outputs/README.md)
+    - [outputs/checkpoint-13/README.md](./3.%20NLP/mychat_사내정책/outputs/checkpoint-13/README.md)
+    - [sample_data/README.md](./3.%20NLP/mychat_사내정책/sample_data/README.md)
+- **llama파인튜닝과퓨샷프롬프트**: [README](./3.%20NLP/llama파인튜닝과퓨샷프롬프트/README.md)
+- **web_chatbot**: [README](./3.%20NLP/web_chatbot/README.md)
+- **web_time**: [README](./3.%20NLP/web_time/README.md)
+- **사내규정챗봇**: [README](./3.%20NLP/사내규정챗봇/README.md)
 
 ## 4. Model Optimizing (모델 최적화)
-- **모델최적화와_컨버트_XAI**
-  - 모델 경량화(프루닝, 양자화), ONNX/TFLite 변환, XAI(GradCAM) 실습
-  - 주요 기능: PyTorch/TensorRT/ONNX/TFLite 변환, 모바일/웹 배포, GradCAM 시각화
+- **model optimizing**: [README](./4.%20model%20optimizing/README.md)
+  - 프루닝, 양자화, ONNX/TFLite 변환, GradCAM 등 XAI, 모바일/웹 배포, 실험 결과 비교 등 상세 실험/코드/노트북 포함
+  - [모델최적화와_컨버트_XAI.ipynb](./4.%20model%20optimizing/모델최적화와_컨버트_XAI.ipynb)
 
 ---
 

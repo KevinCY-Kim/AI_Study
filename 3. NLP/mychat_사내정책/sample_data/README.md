@@ -1,19 +1,22 @@
-This directory includes a few sample datasets to get you started.
+# 📊 sample_data: 공개 데이터셋 모음
 
-*   `california_housing_data*.csv` is California housing data from the 1990 US
-    Census; more information is available at:
-    https://docs.google.com/document/d/e/2PACX-1vRhYtsvc5eOR2FWNCwaBiKL6suIOrxJig8LcSBbmCbyYsayia_DvPOOBlXZ4CAlQ5nlDD8kTaIDRwrN/pub
+## 개요
+- **목적**: LLM/ML 실험용 공개 데이터셋 제공
+- **주요 내용**: 캘리포니아 주택, MNIST, Anscombe 등 다양한 데이터셋 포함
 
-*   `mnist_*.csv` is a small sample of the
-    [MNIST database](https://en.wikipedia.org/wiki/MNIST_database), which is
-    described at: http://yann.lecun.com/exdb/mnist/
+## 데이터셋 설명
+- `california_housing_train.csv`, `california_housing_test.csv` : 캘리포니아 주택 가격 예측용 데이터 (1990 US Census)
+- `mnist_train_small.csv`, `mnist_test.csv` : MNIST 손글씨 숫자 분류용 샘플 데이터
+- `anscombe.json` : Anscombe's quartet (통계적 특이성 시각화용)
 
-*   `anscombe.json` contains a copy of
-    [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet); it
-    was originally described in
+## 활용 예시
+```python
+import pandas as pd
+df = pd.read_csv("california_housing_train.csv")
+df.head()
+```
 
-    Anscombe, F. J. (1973). 'Graphs in Statistical Analysis'. American
-    Statistician. 27 (1): 17-21. JSTOR 2682899.
-
-    and our copy was prepared by the
-    [vega_datasets library](https://github.com/altair-viz/vega_datasets/blob/4f67bdaad10f45e3549984e17e1b3088c731503d/vega_datasets/_data/anscombe.json).
+## 참고 링크
+- [캘리포니아 주택 데이터 설명](https://docs.google.com/document/d/e/2PACX-1vRhYtsvc5eOR2FWNCwaBiKL6suIOrxJig8LcSBbmCbyYsayia_DvPOOBlXZ4CAlQ5nlDD8kTaIDRwrN/pub)
+- [MNIST 데이터 설명](http://yann.lecun.com/exdb/mnist/)
+- [Anscombe's quartet 설명](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)
