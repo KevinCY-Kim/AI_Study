@@ -1,0 +1,13 @@
+torch
+torchvision
+torch-tensorrt
+onnx
+onnxruntime
+tensorflow==2.15.0
+tensorflow-probability==0.23.0
+onnx-tf==1.10.0
+onnx2tf
+tflite-support
+matplotlib
+grad-cam
+numpy

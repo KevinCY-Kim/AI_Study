@@ -1,0 +1,15 @@
+torch
+transformers
+datasets
+unsloth
+trl
+accelerate
+sentencepiece
+bitsandbytes
+xformers
+tqdm
+wandb
+langchain
+chromadb
+PyPDF2
+ollama
