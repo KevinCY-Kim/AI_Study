@@ -1,96 +1,89 @@
 # 🛳 Titanic Survival Prediction with Optuna
 
-이 프로젝트는 **타이타닉 생존자 예측(Titanic: Machine Learning from Disaster)** 문제를 기반으로,  
-머신러닝 풀 프로세스를 거쳐 Optuna를 활용해 모델 하이퍼파라미터 최적화 수행을 진행하였습니다.  
+## 프로젝트 개요
+- **목적**: 타이타닉 생존자 예측 (Titanic: Machine Learning from Disaster)
+- **주요 내용**: 머신러닝 전처리~모델링~Optuna 하이퍼파라미터 튜닝까지 실습
+- **데이터**: titanic.csv
+
+## 주요 기능 및 코드
+
+### 1. 데이터 로드 및 전처리
+```python
+import pandas as pd
+
+df = pd.read_csv("titanic.csv")
+df["Age"] = df["Age"].fillna(df["Age"].mean())
+df["Embarked"] = df["Embarked"].fillna("S")
+# 범주형 변수 원-핫 인코딩
+X = pd.get_dummies(df[["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", "Embarked"]])
+y = df["Survived"]
+```
+
+### 2. 데이터 분할 및 스케일링
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import RobustScaler
+
+X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=0.2, shuffle=True)
+scaler = RobustScaler()
+X_train = scaler.fit_transform(X_train)
+X_valid = scaler.transform(X_valid)
+```
+
+### 3. 기본 모델 학습 및 평가
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score
+
+models = {
+    'Logistic Regression': LogisticRegression(),
+    'Random Forest': RandomForestClassifier(),
+    'XGBoost': XGBClassifier()
+}
+for name, model in models.items():
+    model.fit(X_train, y_train)
+    pred = model.predict(X_valid)
+    print(f"{name} Accuracy: {accuracy_score(y_valid, pred):.4f}")
+```
+
+### 4. Optuna 하이퍼파라미터 튜닝 예시
+```python
+import optuna
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+def objective(trial):
+    n_estimators = trial.suggest_int('n_estimators', 50, 200)
+    max_depth = trial.suggest_int('max_depth', 2, 10)
+    clf = RandomForestClassifier(n_estimators=n_estimators, max_depth=max_depth)
+    clf.fit(X_train, y_train)
+    pred = clf.predict(X_valid)
+    return accuracy_score(y_valid, pred)
+
+study = optuna.create_study(direction="maximize")
+study.optimize(objective, n_trials=30)
+print("Best params:", study.best_params)
+print("Best accuracy:", study.best_value)
+```
+
+### 5. 결과 요약
+- Optuna 튜닝 후 상위 모델 성능:
+  - Logistic Regression: 78.5%
+  - Random Forest (Optuna): 82.1%
+  - XGBoost (Optuna): 83.4%
+  - XGBoost + StratifiedKFold + 튜닝: 85% 이상
 
 ---
 
-## 📌 프로젝트 개요
-- **데이터셋**: Titanic (`titanic.csv`)
-- **목표**: 승객의 생존 여부(`Survived`)를 예측
-- **주요 기법**: 데이터 전처리 → 특성 선택 → 모델 학습 → Optuna 하이퍼파라미터 최적화 → 성능 개선 전략 적용
+## 참고/실행 방법
+- Jupyter에서 `ML_타이타닉__Optuna.ipynb`, `ML_타이타닉__Optuna_하이퍼파라미터튜닝.ipynb` 실행
+- 데이터: titanic.csv
 
-
-### ⚙️ 기술 스택
-- Python 3.x
-- Pandas, Numpy (데이터 처리)
-- Scikit-learn (모델링 및 평가)
-- Optuna (자동 하이퍼파라미터 최적화)
-
-
-### 📂 프로젝트 구조
-```bash
-ML_타이타닉__Optuna.ipynb                 # Optuna 기반 기본 최적화 실험
-ML_타이타닉__Optuna_하이퍼파라미터튜닝.ipynb # 성능 개선 전략을 활용한 확장 버전
-titanic.csv                               # 원본 데이터셋
-README.md                                 # 프로젝트 설명 문서
-```
-
----
-
-## 🚀 실행 방법
-### 1. 저장소를 클론 또는 다운로드:
-   ```bash
-   git clone <repo_url>
-   cd titanic-optuna
-   ```
-### 2. 노트북 실행:
-   ```bash
-   jupyter notebook ML_타이타닉__Optuna.ipynb
-   jupyter notebook ML_타이타닉__Optuna_하이퍼파라미터튜닝.ipynb
-   ```
-
----
-
-## 🔎 주요 단계
-### 1. 데이터 전처리
-
-Age: 평균으로 결측치 보정
-
-Embarked: 최빈값('S')으로 대체
-
-범주형 변수(Sex, Embarked) → 원-핫 인코딩 적용
-
-### 2. Feature & Target 정의
-
-Feature: Pclass, Sex, Age, SibSp, Parch, Fare, Embarked
-
-Target: Survived
-
-### 3. 모델 학습
-
-기본 모델: Logistic Regression, RandomForestClassifier, XGBoost 등
-
-Optuna를 활용해 하이퍼파라미터 탐색
-
-### 4. Optuna 최적화
-```bash
-   import optuna
-
-   study = optuna.create_study(direction="maximize")
-   study.optimize(objective, n_trials=50)
-
-   print(study.best_params)
-   print(study.best_value)
-```
-
-### 5. 결과
-
-Optuna 최적화 후 상위 성능 모델의 파라미터와 Accuracy 기록
-```bash
-베이스라인 대비 성능 향상 확인
-Model	Accuracy
-Logistic Regression	78.5%
-Random Forest (Optuna 최적화)	82.1%
-XGBoost (Optuna 최적화)	83.4%
-XGBoost + StratifiedKFold + 튜닝 85% 이상
-```
-
-### 6. 배운 점과 향후 방향
-
- - Optuna는 직관적이며, 다양한 모델의 하이퍼파라미터 탐색에 유용하다.
- - 기본 모델 대비 성능 향상을 쉽게 확인할 수 있었다.
- - 향후 AutoML 라이브러리(PyCaret, AutoGluon 등)와의 비교 실험에 유용 할 것으로 판단된다.
+## 주요 코드/노트북
+- [ML_타이타닉__Optuna.ipynb](./ML_타이타닉__Optuna.ipynb)
+- [ML_타이타닉__Optuna_하이퍼파라미터튜닝.ipynb](./ML_타이타닉__Optuna_하이퍼파라미터튜닝.ipynb)
 
 
 
