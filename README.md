@@ -75,4 +75,4 @@
 - 이 저장소는 "Creative Commons Attribution 4.0 International (CC BY 4.0)" 라이선스를 따릅니다.
 - 자유롭게 사용/수정/재배포할 수 있으나, 사용 시 반드시 출처(저자 및 저장소 링크)를 명시해야 합니다.
 - 라이선스 전문: `LICENSE` 파일 또는 <https://creativecommons.org/licenses/by/4.0/deed.ko>
-  - 예시 표기: "출처: 김창용, AI_study (`https://github.com/사용자명/AI_study`) - CC BY 4.0"
+  - "출처: KevinCY-Kim, AI_study (`https://github.com/KevinCY-Kim/AI_study`) - CC BY 4.0"
