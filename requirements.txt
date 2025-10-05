@@ -9,6 +9,7 @@ ipykernel>=6.29
 tqdm>=4.66
 requests>=2.31
 python-dotenv>=1.0
+openai>=1.52.0
 
 # Optional / project-specific (uncomment as needed)
 # torch>=2.2
