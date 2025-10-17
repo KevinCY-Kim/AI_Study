@@ -8,7 +8,7 @@ GraphRAG는 그래프 데이터베이스의 구조화된 정보를 활용하여 
 
 ## 🏗️ 시스템 아키텍처
 
-![GraphRAG 1홉 탐색 아키텍처](graphRAG1.png)
+GraphRAG 시스템은 Neo4j 그래프 데이터베이스, Ollama LLM, LangChain 프레임워크를 연결하여 구조화된 데이터를 활용한 질문-답변 시스템을 구축합니다.
 
 ## 🔧 기술 스택
 
@@ -42,15 +42,13 @@ ollama pull exaone3.5:2.4b &
 ollama pull nomic-embed-text &
 ```
 
-## 🗄️ 데이터베이스 스키마 (1홉 탐색)
+## 🗄️ 데이터베이스 스키마
 
-![1홉 탐색 데이터베이스 스키마](graphRAG2.png)
-
-### 노드 타입 (1홉 탐색)
+### 노드 타입
 - **Disease**: 질병 정보 (name 속성)
 - **Diet**: 식단 정보 (description 속성)
 
-### 관계 타입 (1홉 탐색)
+### 관계 타입
 - **TREATED_BY**: 질병과 식단 간의 치료 관계 (effectiveness 속성)
 
 ## 🚀 사용법
@@ -79,6 +77,10 @@ llm = ChatOllama(
 ```
 
 ### 2. 1홉 탐색 (1-hop Exploration)
+
+![GraphRAG 1홉 탐색 아키텍처](graphRAG1.png)
+
+![1홉 탐색 데이터베이스 스키마](graphRAG2.png)
 
 1홉 탐색은 질병과 식단 간의 직접적인 관계를 탐색하는 방식입니다.
 
