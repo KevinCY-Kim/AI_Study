@@ -1,0 +1,51 @@
+Disease,Diet,Effectiveness
+Diabetes,저탄수화물 식단으로 설탕 섭취를 줄이는 식사,8
+Hypertension,지중해식 식단으로 올리브 오일과 채소를 풍부히 섭취,9
+Diabetes,지중해식 식단으로 생선과 견과류를 포함한 식사,6
+HeartDisease,저지방 식단으로 기름진 음식을 피하는 식사,7
+Obesity,고단백 식단으로 근육량을 늘리는 식사,8
+Diabetes,채식 위주의 식단으로 섬유질을 풍부히 섭취,7
+Hypertension,저염식 식단으로 소금 섭취를 최소화,10
+HeartDisease,오메가-3가 풍부한 식단으로 생선을 자주 먹는 식사,9
+Obesity,간헐적 단식과 함께하는 저칼로리 식단,6
+Diabetes,케토 식단으로 탄수화물을 극단적으로 줄이는 식사,9
+Hypertension,채소와 과일을 중심으로 한 알칼리성 식단,8
+HeartDisease,고섬유질 식단으로 소화를 돕는 식사,7
+Obesity,지중해식 식단으로 건강한 지방을 섭취,7
+Diabetes,저지방 채식 식단으로 동물성 지방을 피하는 식사,6
+Hypertension,DASH 식단으로 혈압을 조절하는 균형 잡힌 식사,10
+HeartDisease,저탄수화물 식단으로 심장 부담을 줄이는 식사,8
+Obesity,저염식 식단으로 체액 저류를 줄이는 식사,5
+Diabetes,고단백 저탄수화물 식단으로 혈당을 안정화,8
+Hypertension,고칼륨 식단으로 바나나와 감자를 포함한 식사,9
+HeartDisease,채식 위주의 식단으로 콜레스테롤을 낮추는 식사,7
+Obesity,케토 식단으로 지방 연소를 촉진하는 식사,9
+Diabetes,저염식 식단으로 신장 부담을 줄이는 식사,5
+Hypertension,저지방 식단으로 혈관 건강을 개선,8
+HeartDisease,지중해식 식단으로 항염 효과를 기대하는 식사,9
+Obesity,고섬유질 식단으로 포만감을 늘리는 식사,6
+Diabetes,DASH 식단으로 전반적인 건강을 유지하는 식사,7
+Hypertension,케토 식단으로 체중을 조절하며 혈압 관리,6
+HeartDisease,저염식 채식 식단으로 심장 부담을 최소화,8
+Obesity,저탄수화물 식단으로 빠른 체중 감량을 목표,7
+Diabetes,고칼륨 식단으로 신체 균형을 유지하는 식사,6
+Hypertension,고단백 식단으로 근육을 유지하며 혈압 조절,7
+HeartDisease,고칼륨 식단으로 심장 박동을 안정화,8
+Obesity,DASH 식단으로 균형 잡힌 체중 감량을 목표,6
+Diabetes,저칼로리 식단으로 혈당 변동을 줄이는 식사,7
+Hypertension,저탄수화물 식단으로 혈압과 체중을 동시에 관리,8
+HeartDisease,저칼로리 식단으로 심장 부담을 줄이는 식사,6
+Obesity,채식 위주의 식단으로 칼로리를 낮추는 식사,5
+Diabetes,고섬유질 식단으로 소화와 혈당을 조절,8
+Hypertension,오메가-3가 풍부한 식단으로 혈관을 보호,9
+HeartDisease,케토 식단으로 지방 대사를 개선하는 식사,7
+Obesity,저지방 식단으로 지방 섭취를 줄이는 식사,6
+Diabetes,저염식 채식 식단으로 신장과 혈당을 관리,7
+Hypertension,고섬유질 식단으로 소화를 돕고 혈압 조절,8
+HeartDisease,DASH 식단으로 심혈관 건강을 증진,10
+Obesity,고단백 식단으로 근육을 유지하며 체중 감량,8
+Diabetes,오메가-3가 풍부한 식단으로 염증을 줄이는 식사,6
+Hypertension,저칼로리 식단으로 체중과 혈압을 관리,7
+HeartDisease,고단백 식단으로 심장 근육을 강화하는 식사,8
+Obesity,저염식 채식 식단으로 체액 저류를 줄이고 체중 감량,6
+Diabetes,지중해식 식단으로 장기적인 혈당 조절을 목표,7
