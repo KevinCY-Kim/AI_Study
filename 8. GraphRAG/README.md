@@ -8,7 +8,7 @@ GraphRAG는 그래프 데이터베이스의 구조화된 정보를 활용하여 
 
 ## 🏗️ 시스템 아키텍처
 
-![GraphRAG 아키텍처](graphRAG1.png)
+![GraphRAG 1홉 탐색 아키텍처](graphRAG1.png)
 
 ## 🔧 기술 스택
 
@@ -42,15 +42,15 @@ ollama pull exaone3.5:2.4b &
 ollama pull nomic-embed-text &
 ```
 
-## 🗄️ 데이터베이스 스키마
+## 🗄️ 데이터베이스 스키마 (1홉 탐색)
 
-![데이터베이스 스키마](graphRAG2.png)
+![1홉 탐색 데이터베이스 스키마](graphRAG2.png)
 
-### 노드 타입
+### 노드 타입 (1홉 탐색)
 - **Disease**: 질병 정보 (name 속성)
 - **Diet**: 식단 정보 (description 속성)
 
-### 관계 타입
+### 관계 타입 (1홉 탐색)
 - **TREATED_BY**: 질병과 식단 간의 치료 관계 (effectiveness 속성)
 
 ## 🚀 사용법
@@ -80,7 +80,7 @@ llm = ChatOllama(
 
 ### 2. 1홉 탐색 (1-hop Exploration)
 
-![1홉 탐색 예시](graphRAG3.png)
+1홉 탐색은 질병과 식단 간의 직접적인 관계를 탐색하는 방식입니다.
 
 ```python
 # Cypher 쿼리 생성 프롬프트
@@ -133,7 +133,9 @@ for q in questions:
 
 ### 4. 2홉 탐색 (2-hop Exploration)
 
-더 복잡한 관계 탐색을 위한 2홉 쿼리:
+![2홉 탐색 예시](graphRAG3.png)
+
+2홉 탐색은 질병 → 식단 → 영양소와 같이 더 복잡한 관계를 탐색하는 방식입니다:
 
 ```python
 # 2홉 탐색을 위한 프롬프트 템플릿
