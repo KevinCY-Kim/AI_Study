@@ -1,6 +1,6 @@
 # Deeplearning
 
-이 저장소는 머신러닝, 딥러닝, 자연어처리, 모델 최적화, 통계, 그리고 LangGraph 기반 에이전트까지 다양한 실습/프로젝트를 폴더별로 정리한 자료입니다. 각 폴더별로 주요 실습 주제, 구현 기능, 데이터, 대표 코드/노트북, 결과 등을 한눈에 볼 수 있도록 구성했습니다.
+이 저장소는 머신러닝, 딥러닝, 자연어처리, 모델 최적화, 통계, LangGraph 기반 에이전트, AI 에이전트 개발, 그리고 GraphRAG까지 다양한 실습/프로젝트를 폴더별로 정리한 자료입니다. 각 폴더별로 주요 실습 주제, 구현 기능, 데이터, 대표 코드/노트북, 결과 등을 한눈에 볼 수 있도록 구성했습니다.
 
 ## 목차
 - [빠른 시작](#빠른-시작)
@@ -11,6 +11,8 @@
 - [4. Model Optimizing (모델-최적화)](#4-model-optimizing-모델-최적화)
 - [5. AI agent with LangGraph](#5-ai-agent-with-langgraph)
 - [6. Statistics (통계)](#6-statistics-통계)
+- [7. AI_Agent_Develop (AI 에이전트 개발)](#7-ai_agent_develop-ai-에이전트-개발)
+- [8. GraphRAG (그래프 기반 RAG)](#8-graphrag-그래프-기반-rag)
 
 ---
 
@@ -29,6 +31,8 @@
 - `4. model optimizing`: 프루닝/양자화/컨버전/XAI/배포 실습
 - `5. AI agent with langgraph`: LangGraph로 구성한 AI 에이전트 실험
 - `6. Statistics`: 통계 기초/응용 노트 및 예제
+- `7. AI_Agent_Develop`: AI 에이전트 개발 실습 및 웹 챗봇 구현
+- `8. GraphRAG`: Neo4j 그래프 데이터베이스와 LLM을 활용한 GraphRAG 실습
 
 ---
 
@@ -66,6 +70,29 @@
 ## 6. Statistics (통계)
 - 폴더: `6. Statistics`
 - 기술통계, 가설검정, 회귀/분산분석, 통계적 추론 등 기본 개념과 코드 예제를 담고 있습니다. 노트/노트북에서 실습 위주로 확인할 수 있습니다.
+
+## 7. AI_Agent_Develop (AI 에이전트 개발)
+- 폴더: `7. AI_Agent_Develop`
+- AI 에이전트 개발 실습 및 웹 챗봇 구현을 포함합니다.
+- 주요 실습 내용:
+  - **API키_보관방법.ipynb**: API 키 안전한 관리 방법
+  - **CLI를_사용한_챗봇.ipynb**: 명령줄 인터페이스 챗봇 구현
+  - **FastAPI웹챗봇.ipynb**: FastAPI 기반 웹 챗봇 서버 구축
+  - **Local코파일럿구축검토.ipynb**: 로컬 코파일럿 환경 구축 검토
+  - **어린왕자_페르소나_추가.ipynb**: 특정 페르소나를 가진 챗봇 구현
+  - **챗봇이_이전대화를_기억.ipynb**: 대화 기록을 유지하는 챗봇 구현
+
+## 8. GraphRAG (그래프 기반 RAG)
+- 폴더: `8. GraphRAG`
+- **README**: [README](./8.%20GraphRAG/README.md)
+- Neo4j 그래프 데이터베이스와 Ollama LLM을 연결한 GraphRAG 실습 프로젝트입니다.
+- 주요 기능:
+  - **그래프 기반 질문-답변**: 질병과 식단 간의 관계를 그래프로 표현
+  - **자동 Cypher 쿼리 생성**: 자연어 질문을 Cypher 쿼리로 변환
+  - **다중 홉 탐색**: 1홉, 2홉 등 다양한 깊이의 관계 탐색
+  - **효과성 점수 기반 필터링**: 치료 효과 점수를 활용한 정확한 검색
+- 기술 스택: Neo4j, Ollama, LangChain, Python
+- 실습 파일: `Graph실습.ipynb`
 
 ---
 
