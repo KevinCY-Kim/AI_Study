@@ -130,10 +130,20 @@ result.export_visuals(export_dir="/path/to/results/")
 
 ## 📈 결과 및 시각화
 
-프로젝트는 학습 과정과 예측 결과를 시각적으로 확인할 수 있는 이미지들을 포함하고 있습니다:
+### 학습 배치 샘플 이미지
+다음은 모델 학습 과정에서 사용된 배치 샘플 이미지입니다:
 
-- `train_batch0.jpg`: 학습 배치 샘플 이미지
-- `prediction_visual.png`: SAHI를 적용한 예측 결과 시각화
+![학습 배치 샘플](train_batch0.jpg)
+
+### SAHI 예측 결과
+다음은 SAHI(Slicing Aided Hyper Inference) 기법을 적용한 화재 탐지 예측 결과입니다:
+
+![SAHI 예측 결과](prediction_visual.png)
+
+**주요 특징:**
+- 작은 화재 객체 탐지 성능 향상
+- 슬라이싱 기법을 통한 정확도 개선
+- 실시간 화재 감지 가능
 
 ## 🔗 참고 자료
 
