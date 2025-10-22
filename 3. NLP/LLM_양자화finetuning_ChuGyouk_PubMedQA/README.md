@@ -157,5 +157,5 @@ LLM_양자화finetuning_ChuGyouk_PubMedQA/
 
 ---
 
-**작성자**: AI Study Project  
-**최종 업데이트**: 2025년 1월
+**작성자**: By Kevin.CY.Kim  
+**최종 업데이트**: 2025년 10월
