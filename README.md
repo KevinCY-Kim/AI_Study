@@ -13,6 +13,8 @@
 - [6. Statistics (통계)](#6-statistics-통계)
 - [7. AI_Agent_Develop (AI 에이전트 개발)](#7-ai_agent_develop-ai-에이전트-개발)
 - [8. GraphRAG (그래프 기반 RAG)](#8-graphrag-그래프-기반-rag)
+- [9. MySQL](#9-mysql)
+- [10. CloudandMLops (클라우드와 MLOps)](#10-cloudandmlops-클라우드와-mlops)
 
 ---
 
@@ -33,6 +35,8 @@
 - `6. Statistics`: 통계 기초/응용 노트 및 예제
 - `7. AI_Agent_Develop`: AI 에이전트 개발 실습 및 웹 챗봇 구현
 - `8. GraphRAG`: Neo4j 그래프 데이터베이스와 LLM을 활용한 GraphRAG 실습
+- `9. MySQL`: MySQL 데이터베이스 연동, 데이터 처리, 관련 실습
+- `10. CloudandMLops`: 클라우드 환경에서의 모델 배포 및 MLOps 파이프라인 구축 실습
 
 ---
 
@@ -93,6 +97,18 @@
   - **효과성 점수 기반 필터링**: 치료 효과 점수를 활용한 정확한 검색
 - 기술 스택: Neo4j, Ollama, LangChain, Python
 - 실습 파일: `Graph실습.ipynb`
+
+## 9. MySQL
+- 폴더: `9. MySQL`
+- MySQL 데이터베이스를 활용한 데이터 처리, 모델 학습 데이터 구축, Python과의 연동 실습 등을 포함합니다.
+
+## 10. CloudandMLops (클라우드와 MLOps)
+- 폴더: `10. CloudandMLops`
+- 클라우드 플랫폼(AWS, GCP, Azure 등)을 활용한 머신러닝 모델 배포, CI/CD 파이프라인 구축, 모니터링 등 MLOps 전반에 대한 실습을 다룹니다.
+- 주요 실습 내용:
+  - Docker를 이용한 모델 서빙 환경 구축
+  - 클라우드 스토리지와 모델 연동
+  - 자동화된 학습 및 배포 파이프라인 설계
 
 ---
 
